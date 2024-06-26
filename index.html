@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granny's Pies</title>
+    <link rel="stylesheet" href="C:\Users\AYUEL\OneDrive\Desktop\GRANNYPIESMAIN\index.css">
+    <link rel="icon" href="https://www.rose-hulman.edu/class/csse/csse290-WebProgramming/images/pie-icon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Granny's Pies</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#pies">Our Pies</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At Granny's Pies, we make the most delicious pies using traditional recipes passed down through generations.</p>
+        </section>
+        <section id="pies">
+            <h2>Our Pies</h2>
+            <div class="select-container">
+                <select onchange="window.location.href=this.value">
+                    <option value="#">Select a pie</option>
+                    <option value="C:\Users\AYUEL\OneDrive\Desktop\grannypies\cherry.html\cherry.html">Cherry Pie</option>
+                    <option value="C:\Users\AYUEL\OneDrive\Desktop\grannypies\apple.html\apple.html">Apple Pie</option>
+                    <option value="C:\Users\AYUEL\OneDrive\Desktop\grannypies\pumpkin.html\pumpkin.html">Pumpkin Pie</option>
+                    <option value="C:\Users\AYUEL\OneDrive\Desktop\grannypies\pie.html\pie.html">Lemon Meringue Pie</option>
+                </select>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="mailto:info@grannyspies.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="button-group">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
